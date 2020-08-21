@@ -17,7 +17,7 @@ class CreateItemsTable extends Migration
             $table->id();
             $table->string('title');
             $table->string('description');
-            $table->string('price');
+            $table->bigInteger('price');
             $table->string('image');
             $table->timestamps();
         });

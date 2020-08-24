@@ -12,8 +12,6 @@ class ItemsTableSeeder extends Seeder
      */
     public function run()
     {
-        Item::truncate();
-
         Item::create([
             'title' => 'Pizza 1',
             'description' => 'Test pizza desc',

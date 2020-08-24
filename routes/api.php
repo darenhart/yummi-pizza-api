@@ -19,4 +19,12 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-Route::get('item', 'ItemController@index');
+Route::apiResources([
+    "user" => "UserController",
+    "item" => "ItemController",
+    "order" => "OrderController",
+]);
+
+Route::post('order/{order}/item/{item}', 'OrderController@addItem');
+
+Route::get('user/{user}/order', 'UserController@getOrders');

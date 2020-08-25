@@ -27,4 +27,6 @@ Route::apiResources([
 
 Route::post('order/{order}/item/{item}', 'OrderController@addItem');
 
+Route::post('completeOrder/', 'OrderController@completeOrder');
+
 Route::get('user/{user}/order', 'UserController@getOrders');

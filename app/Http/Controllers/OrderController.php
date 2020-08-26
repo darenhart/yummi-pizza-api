@@ -12,7 +12,7 @@ class OrderController extends Controller
 {
     public function index()
     {
-        return Order::with('items')->get();
+        return Order::with('items')->orderBy('created_at', 'desc')->get();
     }
     
     public function show($id)
@@ -50,7 +50,6 @@ class OrderController extends Controller
         ));
         return 201;
     }
-
 
     public function completeOrder(Request $request)
     {

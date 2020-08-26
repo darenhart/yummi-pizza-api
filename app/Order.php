@@ -8,7 +8,7 @@ use App\Item;
 class Order extends Model
 {
     protected $fillable = [
-        'user_id', 'price', 'delivery_price',
+        'user_id', 'price', 'delivery_price', 'currency'
     ];
 
     public function items()

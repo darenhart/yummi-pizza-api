@@ -18,6 +18,7 @@ class CreateOrdersTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->unsignedInteger('price');
             $table->unsignedInteger('delivery_price');
+            $table->string('currency');
             $table->timestamps();
         });
         Schema::table('orders', function (Blueprint $table) {

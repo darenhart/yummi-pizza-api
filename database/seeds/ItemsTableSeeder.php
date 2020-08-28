@@ -37,7 +37,7 @@ class ItemsTableSeeder extends Seeder
             'image' => 'https://www.tasteofhome.com/wp-content/uploads/2018/01/Lehmejun-Armenian-Pizza-_EXPS_THN17_202708_B06_20_6b-3-696x696.jpg',
         ]);
         Item::create([
-            'title' => 'Mama Rachel\'s Mediterranean Pizza',
+            'title' => 'Mama Rachel\'s Pizza',
             'description' => 'Salami, ham, prosciutto, eggs, and Italian cheeses such as mozzarella.',
             'price' => 2500,
             'image' => 'https://www.tasteofhome.com/wp-content/uploads/2018/01/exps75526_HCK153422B09_03_3b-696x696.jpg',
